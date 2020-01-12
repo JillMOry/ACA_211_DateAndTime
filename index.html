@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
-    <hr/>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<h1>Hello World!</h1>
+    <hr />
+    <h3>What is the current date and time?</h3>
+		<div id="display-element"></div>
+		<button onclick="displayDate()">Click Me</button>
+		<hr />
+    <hr />
+    <h3>Change a number to a string</h3>
+		<input type="number" id="numToString"></div>
+		<button onclick="toString(document.getElementById('numToString'))">Click Me</button>
+    <hr />
+    <hr />
+    <h3>Change a string to a number</h3>
+		<input type="text" id="textToNumber"></div>
+		<button onclick="parseInt(document.getElementById('textToNumber'))">Click Me</button>
+    <hr />
+    <h3>Click the buttons to see the data types! </h3>
+      <button id="type1" onclick="isTypeOf(myBool)">False</button> <br>
+      <button id="type2" onclick="isTypeOf(myNull)">Null</button> <br>
+      <button id="type3" onclick="isTypeOf(myUndefined)">Undefined</button> <br>
+      <button id="type4" onclick="isTypeOf(myNumber)">42</button> <br>
+      <button id="type5" onclick="isTypeOf(myNaN)">NaN</button> <br>
+      <button id="type6" onclick="isTypeOf(myString)">"42"</button> <br>
+          <hr>
+    <h3>Enter two numbers to add</h3>
+      Entry 1: <input type="number" name="num1"  id="num1"><br>
+      Entry 2: <input type="number" name="num2"  id="num2"><br>
+        <h4 id="answer" ></h4> 
+          <button onclick="addTwo((document.getElementById('num1').value,document.getElementById('num2').value))">Click Me</button>
+    <hr />
+    
+  <h3>Evaluate two things and state if both are true</h3>
+    <input type="text" id="entry1")> 
+    =
+    <input type="text" id="entry2")> 
+    <br><br>
+    <input type="text" id="entry3")> 
+    =
+    <input type="text" id="entry4")> 
+   <br> <br>
+  <button onclick="bothAreTrue(document.getElementById('entry1').value,document.getElementById('entry2').value,document.getElementById('entry3').value,document.getElementById('entry4').value)";>Click Me</button>
+  <h3 id="answer2" ></h3>
+  <hr>
+
+  <h3>Evaluate two things and state if one is false</h3>
+  <input type="number" id="entry5")> 
+  >
+  <input type="number" id="entry6")> 
+  <br><br>  
+  <input type="number" id="entry7")> 
+  ≠
+  <input type="number" id="entry8")> 
+ <br> <br>
+<button onclick="oneIsTrue(document.getElementById('entry5').value,document.getElementById('entry6').value,document.getElementById('entry7').value,document.getElementById('entry8').value)";>Click Me</button>
+<h3 id="answer3" ></h3>
+<hr>
+
+<h3>Evaluate two things and state if both are false</h3>
+<input type="number" id="entry9")> 
+>
+<input type="number" id="entry10")> 
+<br><br>  
+<input type="number" id="entry11")> 
+≠
+<input type="number" id="entry12")> 
+<br> <br>
+<button onclick="bothAreFalse(document.getElementById('entry9').value,document.getElementById('entry10').value,document.getElementById('entry11').value,document.getElementById('entry12').value)">Click Me</button>
+<h3 id="answer5" ></h3>
+
+	</body>
 </html>
